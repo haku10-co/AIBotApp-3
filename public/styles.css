@@ -3,21 +3,36 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+   
     align-items: center;
     height: 100vh;
     background-color: #f5f5f5;
 }
 
-#chat-container {
-    width: 500px;
+.chat-container {
+    width: 350px;
     height: 600px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background: white;
+    
+}
+
+.close-button {
+    position: absolute; /* ここを追加 */
+    top: 0; /* ここを追加 */
+    left: 0; /* ここを追加 */
+    background: #30B8F5;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 #message-container {
@@ -27,32 +42,35 @@ body {
 }
 
 #send-container {
-    display: flex;
-    border-top: 1px solid #ddd;
     padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    gap: 10px;
 }
 
 #message-input {
     flex: 1;
-    border: none;
-    border: 1px solid black;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 5px;
 }
 
 #send-button {
-    margin-left: 10px;
-    padding: 5px 10px;
+    background: #30B8F5;
+    color: white;
     border: none;
+    padding: 10px 15px;
     border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
     cursor: pointer;
 }
-
-#send-button:hover {
-    background-color: #0056b3;
+#send-button img {
+    width: 20px; /* 画像の幅を調整 */
+    height: 20px; /* 画像の高さを調整 */
 }
+#send-button:hover {
+    background: #2095D6;
+}
+
 .message {
     position: relative;
     background: #e0e0e0;

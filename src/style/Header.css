@@ -1,0 +1,53 @@
+.header {
+    position: fixed; /* ヘッダーを固定 */
+    top: 0; /* ヘッダーをページの一番上に配置 */
+    width: 100%; /* ヘッダーを端から端まで伸ばす */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 1000px 10px 50px; /* ヘッダーのパディングを調整 */
+    background-color: #fff; /* ヘッダーの背景色 */
+    z-index: 1000; /* ヘッダーが他の要素の上に表示されるようにする */
+}
+
+.logo-container img {
+    height: 50px; /* ロゴのサイズを調整 */
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* ナビゲーション項目間の間隔 */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333; /* ナビゲーションリンクの色 */
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* コンタクト情報の間隔 */
+}
+
+.phone-number p {
+    margin: 0;
+    font-size: 0.8rem; /* 電話番号のラベルサイズ */
+}
+
+.phone-number a {
+    color: #d00; /* 電話番号リンクの色 */
+    font-weight: bold; /* 電話番号リンクの太さ */
+}
+
+.inquiry-button {
+    padding: 10px 20px;
+    background-color: #d00;
+    border-radius: 5px; /* 問い合わせボタンのスタイル */
+}
+
+.inquiry-link {
+    color: #fff;
+    text-decoration: none; /* 問い合わせリンクのスタイル */
+}
